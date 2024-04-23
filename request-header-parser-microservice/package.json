@@ -1,5 +1,5 @@
 {
-  "name": "timestamp-microservice",
+  "name": "request-header-parser-microservice",
   "packageManager": "yarn@4.1.1",
   "scripts": {
     "start": "node src/index.js",
