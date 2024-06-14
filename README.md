@@ -1,2 +1,0 @@
-# fcc
-freecodecamp certification projects
