@@ -3,7 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css">
     <title>Survey Form</title>
   </head>
-  <body></body>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill your developer profile.</p>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name: </label>
+      <input id="name" type="text" placeholder="Enter your full name." required />
+      <label id="email-label" for="email">Email: </label>
+      <input id="email" type="email" placeholder="Enter your email." required />
+      <label id="number-label" for="number">Years of experience: </label>
+      <input id="number" type="number" min=1 max=100 placeholder="Enter a number 1-100"/>
+      <label id="gender-label" for="dropdown">Gender</label>
+      <select id="dropdown">
+        <option value="male" name="gender">Male</option>
+        <option value="female" name="gender">Female</option>
+        <option value="other" name="gender">Other</option>
+      </select>
+      <label id="marital-label">Employment Status</label>
+      <input type="radio" value="full-time" name="employment">Full-Time</input>
+      <input type="radio" value="part-time" name="employment">Part-Time</input>
+      <input type="radio" value="unemployed" name="employment">Not Working</input>
+      <label id="role-label">Developer Role: </label>
+      <input type="checkbox" name="role" value="frontend">Frontend</input>
+      <input type="checkbox" name="role" value="backend">Backend</input>
+      <input type="checkbox" name="role" value="fullstack">Fullstack</input>
+      <input type="checkbox" name="role" value="devops">Devops</input>
+      <label id="comments" for="comments">Comments</label>
+      <textarea rows=3></textarea>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
 </html>
